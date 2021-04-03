@@ -19,7 +19,28 @@
   height: 60px;
 
 }
-
+.playground{
+	width:50%;
+    height:50%;
+    margin: auto;
+	margin-top: 250px;
+    
+}
+body html .root {
+    height: 100%;
+}
+.start{
+  font-family: "Fredoka One", cursive;
+  
+    background-color: #202124;
+  color: white;
+  height: 30px;
+  font-size: 15px;
+  border-radius:8px;
+  border: none;
+  width: 100px;
+  
+}
 
 .ball {
   background-color: black;
@@ -42,11 +63,4 @@
   height: 50px;
   width: 50px;
   border-radius: 30px;
-}
-
-.start{
-  text-align: center;
-  position: absolute;
-  left: 700px;
-
 }

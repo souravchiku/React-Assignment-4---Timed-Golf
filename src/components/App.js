@@ -28,7 +28,7 @@ import React, { Component, useState, useEffect } from "react";
 import "../styles/App.css";
 
 const App = () => {
-  const [moveBall, setMoveBall] = useState(false);
+  const [moveBall, setMoveBall] = useState(true);
   const [time, setTime] = useState(0);
   const [interval,setinter]=useState(0);
   const [ballPosition, setBallPosition] = useState({
@@ -69,8 +69,8 @@ const App = () => {
   };
   useEffect(() => {
     if (ballPosition.left === 250 && ballPosition.top === 250) {
-      clearInterval(interval)
-      setMoveBall(moveBall=>false)}
+      clearInterval(interval);
+      setMoveBall(moveBall=> false)}
       if(moveBall){
         document.addEventListener("keydown",handleListener);
         return()=>(
